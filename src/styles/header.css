@@ -1,0 +1,66 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid rgba(0, 27, 55, 0.1);
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  width: 92%;
+  margin: 0 auto;
+  min-height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  width: 20px;
+  height: 20px;
+}
+
+.header__title {
+  font-size: 18px;
+}
+
+.header__icon img {
+  fill: gray;
+}
+
+.header__menu {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .header__button {
+    display: none;
+  }
+
+  .header__menu {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .header__menu > li {
+    padding: 0 8px;
+  }
+
+  .header__menu > li > button {
+    padding: 12px 10px;
+    color: rgb(78, 89, 104);
+  }
+  .header__menu > li > .header__menu__career {
+    background-color: #3182f6;
+    height: 32px;
+    padding: 7px 12px;
+    border-radius: 6px;
+    color: white;
+  }
+}
