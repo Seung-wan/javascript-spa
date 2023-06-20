@@ -137,6 +137,7 @@ a {
 }
 a:visited,
 a:hover,
+a:link,
 a:active {
-  color: inherit;
+  color: black;
 }

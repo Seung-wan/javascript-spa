@@ -6,7 +6,7 @@ function renderContent(route) {
 }
 
 function getCurrentRoute(routes, path) {
-  return routes.find((routes) => routes.path === path);
+  return routes.find((route) => route.path === path);
 }
 
 function navigate(event) {
