@@ -3,9 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/reset.css" />
+    <link rel="stylesheet" href="src/styles/util.css" />
+    <link rel="stylesheet" href="src/styles/header.css" />
+    <link rel="stylesheet" href="src/styles/main.css" />
+    <link rel="stylesheet" href="src/styles/design.css" />
     <title>Toss Tech Clone</title>
   </head>
   <body>
+    <header>
+      <nav>
+        <a class="header__left" href="/">
+          <img class="header__logo" src="src/assets/images/toss_logo.png" alt="logo" />
+          <div class="header__title">
+            <span class="text-bold">toss</span>
+            tech
+          </div>
+        </a>
+        <button type="button" class="header__button">
+          <img src="src/assets/svgs/bars.svg" alt="menu" />
+        </button>
+        <ul class="header__menu">
+          <li>
+            <a class="header__nav" href="#design">디자인</a>
+          </li>
+          <li>
+            <a class="header__nav" href="#tech">개발</a>
+          </li>
+          <li>
+            <a href="https://toss.im/career/jobs" class="header__menu__career" target="_blank" rel="noreferrer noopener"
+              >채용 바로가기</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
     <div id="root"></div>
+    <script type="module" src="src/index.js"></script>
   </body>
 </html>
